@@ -173,6 +173,28 @@ uv run 03_sistema_multiagente.py
 uv run 04_cronjobs.py
 ```
 
+## Visualizar `01_agente_basico` con LangGraph
+
+Este repositorio incluye una versión equivalente del agente básico lista para
+LangGraph Studio en [langgraph_01_agente_basico.py](langgraph_01_agente_basico.py).
+El archivo [langgraph.json](langgraph.json) expone el grafo como `agent` para
+que `langgraph dev` pueda cargarlo y dibujarlo.
+
+Instala la CLI de LangGraph si no la tienes:
+
+```bash
+pip install -U "langgraph-cli[inmem]"
+```
+
+Después, desde la raíz del proyecto, arranca el servidor de desarrollo:
+
+```bash
+langgraph dev
+```
+
+Con eso podrás abrir Studio y ver el grafo del agente, incluyendo las llamadas
+a herramientas.
+
 El ejemplo 4 está pensado para ser disparado automáticamente por un cronjob o ejecutarse manualmente cuando quieras generar el informe.
 
 ## Ideas de evolución

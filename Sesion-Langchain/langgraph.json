@@ -1,0 +1,15 @@
+{
+  "dependencies": [
+    "langgraph",
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "python-dotenv",
+    "duckduckgo-search",
+    "ddgs"
+  ],
+  "graphs": {
+    "agent": "./langgraph_01_agente_basico.py:agent"
+  },
+  "env": ".env"
+}
